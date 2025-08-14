@@ -28,6 +28,10 @@ export const rainbowMagicWallet = ({ chains, apiKey }) => ({
           // Authentication Options
           enableEmailLogin: true,
           enableSMSLogin: true,
+          oauthOptions: {
+            providers: ["google"],
+            //callbackUrl: "/", // Changed from window.location.href to "/"
+          },
           // Configuration
           magicSdkConfiguration: {
             network: {
